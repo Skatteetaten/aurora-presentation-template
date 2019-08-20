@@ -1,0 +1,7 @@
+= Presentation Template
+Meg <meg@skatteetaten.no>
+2018-09-01
+:revnumber: {project-version}
+
+== Plantmul
+plantuml::test.puml["test", "png"]
