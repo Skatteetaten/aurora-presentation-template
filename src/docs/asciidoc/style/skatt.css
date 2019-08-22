@@ -406,7 +406,7 @@ body {
 
 /* line 8, ../../../../src/main/sass/skatt.scss */
 .reveal.center {
-  background: white url("../Skatteetaten-logo.svg");
+  background: white url("Skatteetaten-logo.svg");
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: 1% 95%;

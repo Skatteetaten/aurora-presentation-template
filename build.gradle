@@ -3,9 +3,9 @@ plugins {
 }
 
 repositories {
-  jcenter()
   maven { url 'http://rubygems-proxy.torquebox.org/releases' }
   mavenCentral()
+  jcenter()
 }
 
 asciidoctorj {
@@ -23,12 +23,13 @@ asciidoctorRevealJs {
     include 'index.adoc'
   }
   resources {
-    from('src/images') {
-      include '**'
+    from('src/docs/asciidoc') {
+      include 'style/*.svg'
+      include 'images/*'
     }
   }
   attributes 'sourceDir': 'src/docs/asciidoc',
-      'imagesDir': 'images',
+      'imagesDir': '',
       'icons': 'font',
       'iconfont-name': 'fontawesome-5.8.0'
   revealjsOptions {
@@ -39,7 +40,7 @@ asciidoctorRevealJs {
     overviewMode = true
     touchMode = true
     backgroundTransition = 'fade'
-    customThemeLocation = 'src/theme/skatt.css'
+    customThemeLocation = 'src/docs/asciidoc/style/skatt.css'
     theme = 'skatt'
   }
 }

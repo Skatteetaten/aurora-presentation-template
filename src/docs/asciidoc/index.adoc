@@ -5,3 +5,6 @@ Meg <meg@skatteetaten.no>
 
 == Plantmul
 plantuml::test.puml["test", "png"]
+
+== Background image
+image::images/parallax.jpg[canvas, size=cover]
