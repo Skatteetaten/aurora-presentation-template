@@ -25,7 +25,7 @@ body {
 /* line 12, ../../../../src/main/reveal.js-3.3.0/css/theme/template/theme.scss */
 .reveal {
   font-family: "Lato", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
   color: #657b83;
 }
@@ -219,8 +219,8 @@ body {
 .reveal pre code {
   display: block;
   padding: 5px;
-  overflow: auto;
-  max-height: 400px;
+  overflow: hidden;
+  max-height: 600px;
   word-wrap: normal;
 }
 
@@ -434,7 +434,7 @@ body {
 }
 /* line 35, ../../../../src/main/sass/skatt.scss */
 .reveal section div.small {
-  font-size: 0.7em;
+  font-size: 0.5em;
 }
 /* line 41, ../../../../src/main/sass/skatt.scss */
 .reveal .paragraph {
@@ -474,7 +474,7 @@ body {
 }
 /* line 81, ../../../../src/main/sass/skatt.scss */
 .reveal .listingblock.small {
-  font-size: 0.7em;
+  font-size: 0.5em;
 }
 /* line 86, ../../../../src/main/sass/skatt.scss */
 .reveal table.small {
@@ -488,3 +488,4 @@ body {
 .reveal table p {
   margin: 5px;
 }
+
