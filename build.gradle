@@ -1,5 +1,5 @@
 plugins {
-  id "org.asciidoctor.jvm.revealjs" version "3.0.0-alpha.3"
+  id "org.asciidoctor.jvm.revealjs" version "3.1.0"
 }
 
 repositories {
@@ -33,7 +33,7 @@ asciidoctorRevealJs {
       'icons': 'font',
       'iconfont-name': 'fontawesome-5.8.0'
   revealjsOptions {
-    controls = true
+    controls = false
     slideNumber = true
     progressBar = true
     pushToHistory = true
@@ -44,3 +44,5 @@ asciidoctorRevealJs {
     theme = 'skatt'
   }
 }
+
+defaultTasks 'clean', 'asciidoctorRevealJs'
