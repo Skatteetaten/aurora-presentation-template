@@ -1,13 +1,26 @@
 plugins {
   id "org.asciidoctor.jvm.revealjs" version "3.1.0"
+  id 'org.asciidoctor.jvm.gems' version '3.1.0'
+
 }
 
 repositories {
-  maven { url 'http://rubygems-proxy.torquebox.org/releases' }
   mavenCentral()
   jcenter()
+  ruby {
+    gems()
+  }
 }
 
+revealjs {
+  version = '3.1.0'
+
+  templateGitHub {
+    organisation = 'hakimel'
+    repository = 'reveal.js'
+    tag = '3.9.1'
+  }
+}
 asciidoctorj {
   modules {
     diagram {
